@@ -6,3 +6,9 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
+
+
+# Copiar o arquivo .env e a credencial
+COPY .env .env
+COPY credentials/ credentials/
+ENV GOOGLE_APPLICATION_CREDENTIALS=/app/credentials/data-project.json
