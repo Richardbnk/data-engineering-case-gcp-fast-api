@@ -5,15 +5,18 @@ WORKDIR /app
 # Copy all project files into the container
 COPY . /app
 
-# Copy environment variables and service account credentials
-COPY .env .env
-COPY credentials/ credentials/
-
-# Set the environment variable for GCP authentication
+# Set environment variables
+ENV PYTHONPATH=/app
 ENV GOOGLE_APPLICATION_CREDENTIALS=/app/credentials/data-project.json
 
-# Install all Python dependencies
+# Install system dependencies including curl
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+
+# Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Start the FastAPI application using Uvicorn
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]
+# Make start script executable
+RUN chmod +x /app/start.sh
+
+# Run the start script to launch the API and upload CSVs
+CMD ["/app/start.sh"]
