@@ -1,0 +1,15 @@
+# Core Libraries
+pandas==2.0.3
+numpy==1.23.5
+
+# Environment Variables
+python-dotenv==1.0.0
+
+# Google Cloud SDKs
+google-cloud-bigquery==3.14.1
+
+fastapi
+uvicorn[standard]
+sqlalchemy
+asyncpg
+
