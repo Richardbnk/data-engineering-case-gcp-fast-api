@@ -17,4 +17,6 @@ fastapi
 uvicorn[standard]
 sqlalchemy
 asyncpg
+pyarrow
 
+python-multipart
