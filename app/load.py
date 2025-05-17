@@ -49,6 +49,7 @@ def load_csv_to_bigquery(file: UploadFile, table_name: str):
             df.columns = ["id", "name", "datetime", "department_id", "job_id"]
 
             # Remove lines with missing key columns
+            # In a real scenerio, a different logic for each field would be applied
             df.dropna(
                 subset=["id", "department_id", "job_id", "datetime"], inplace=True
             )
