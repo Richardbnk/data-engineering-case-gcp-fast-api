@@ -41,7 +41,7 @@ git clone https://github.com/Richardbnk/data-engineering-case-gcp-fast_api.git
 cd data-engineering-case-gcp-fast_api
 ```
 
-### 2. Add credentials and .~~env~~
+### 2. Add credentials and .env
 
 - Place your GCP service account key in:  
   `credentials/data-project.json`
