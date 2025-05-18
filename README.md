@@ -6,7 +6,7 @@ This project is a full-stack data engineering solution that:
 - Exposes a FastAPI service with endpoints to trigger and export analytical reports
 - Containerized via Docker and designed for local and cloud environments
 
-## Features
+## 🚀 Features
 
 - REST API built with **FastAPI**
 - GCP integration with **BigQuery**
@@ -18,7 +18,7 @@ This project is a full-stack data engineering solution that:
 - Containerized with Docker for easy execution
 - Includes bootstrap logic that auto-loads data when the container runs
 
-## Requirements
+## 🧾 Requirements
 
 - Docker Desktop running
 - GCP Project with BigQuery enabled
@@ -28,7 +28,11 @@ This project is a full-stack data engineering solution that:
   - `data/jobs.csv`
   - `data/hired_employees.csv`
 
-## Running the project
+## Evidences of the execution of the project
+
+You can find evidence of the project execution, such as screenshots and result outputs, in the [evidences folder](https://github.com/Richardbnk/data-engineering-case-gcp-fast-api/tree/main/evidences).
+
+## 🐳 Running the project
 
 ### 1. Clone the repository
 
