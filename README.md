@@ -32,7 +32,6 @@ This project is a full-stack data engineering solution that:
 
 You can find evidence of the project execution, such as screenshots and result outputs, in the [evidences folder](https://github.com/Richardbnk/data-engineering-case-gcp-fast-api/tree/main/evidences).
 
-
 ## 🐳 Running the project
 
 ### 1. Clone the repository
